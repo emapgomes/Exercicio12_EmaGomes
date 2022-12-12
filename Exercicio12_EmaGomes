@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio12</title>
+
+    <style>
+body h4 {
+    color: black;
+    background-color: #ebb215;;
+    text-indent: 8px;
+    padding: 2px;
+}
+
+body {
+    text-indent: 8px;
+    font-weight: bold;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <h4>SISTEMA DE GESTÃO ACADÉMICA</h4>
+    <H3>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</H3>
+
+
+    <form action="log
+    in.php" method="post">
+        <p><label for="nome">Login</label> <input type="text" name="login" id="login" required size="50"
+                placeholder="Insira o seu email" autocomplete="email"></p>
+        <p><label for="password">Password</label> <input type="text" name="password" id="password" required size="50"
+                placeholder="Insira a sua password" autocomplete="current-password"></p>
+
+        <p><label for="Status">Status</label>
+            <select name="Status" id="Status">
+                <option value="">--- Selecione um valor ---</option>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo" selected>Inativo</option>
+            </select>
+        </p>
+
+        <p>Tipo
+            <input type="radio" id="Tipo" name="Tipo">
+            <label for="Tipo">Técnico</label>
+            <input type="radio" id="Tipo" name="Tipo">
+            <label for="Tipo">Professor</label>
+            <input type="radio" id="Tipo" name="Tipo" checked>
+            <label for="Tipo">Aluno</label>
+        </p>
+
+        <p><label for="data">Data Criação</label>
+            <input type="date" name="data" id="data">
+        </p>
+
+        <p>Perfil
+            <input type="radio" id="perfil" name="perfil">
+            <label for="perfil">Convidado</label>
+            <input type="radio" id="perfil" name="perfil" checked>
+            <label for="perfil">Admistrador</label>
+        </p>
+
+
+        <p><label for="mensagem">Observações</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"> </textarea>
+        </p>
+
+        <p>Módulos
+            <input type="radio" id="perfil" name="perfil">
+            <label for="perfil">Compras</label>
+            <input type="radio" id="perfil" name="perfil">
+            <label for="perfil">Biblioteca</label>
+            <input type="radio" id="perfil" name="perfil">
+            <label for="perfil">Acadêmico</label>
+
+            <input type="radio" id="perfil" name="perfil" checked>
+            <label for="perfil">Documentação</label>
+            <input type="radio" id="perfil" name="perfil">
+            <label for="perfil">Recursos Humanos</label>
+        </p>
+
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+
+</html>
